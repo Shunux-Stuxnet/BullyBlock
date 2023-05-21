@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Data</title>
+</head>
+<body>
+  <h1>User Data</h1>
+  <form id="userDataForm" method="post" action="/showUserData">
+    <label for="userID">User ID:</label>
+    <input type="text" id="userID" name="id">
+    <input type="submit" value="Generate PDF">
+  </form>
+
+  <script>
+    document.getElementById("userDataForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the user ID from the input field
+      var userID = document.getElementById("userID").value;
+
+      // Fetch the PDF data
+      fetch("/showUserData?id=" + encodeURIComponent(userID))
+        .then(response => response.blob())
+        .then(blob => {
+          // Create a temporary anchor element
+          var link = document.createElement("a");
+          link.href = URL.createObjectURL(blob);
+          link.download = "user_data.pdf";
+
+          // Programmatically click the link to trigger the download
+          link.click();
+
+          // Clean up the URL object after the download
+          URL.revokeObjectURL(link.href);
+        })
+        .catch(error => console.error("Failed to generate PDF:", error));
+    });
+  </script>
+</body>
+</html>

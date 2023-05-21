@@ -1,0 +1,52 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#chatForm").submit(function(e) {
+                e.preventDefault();
+                var message = $("#messageInput").val();
+                if (message.trim() !== "") {
+                    $("#responseContainer").append("<p>You: " + message + "</p>");
+                    $.get("/chat", { message: message }, function(response) {
+                        $("#responseContainer").append("<p>Chatbot: " + response + "</p>");
+                        $("#messageInput").val("");
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="responseContainer"></div>
+    <form id="chatForm">
+<input type="text" id="messageInput" />
+<button type="submit">Send</button>
+</form>
+
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/chat.css">
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="responseContainer"></div>
+    <form id="chatForm">
+        <input type="text" id="messageInput" placeholder="Type your query..." />
+        <button type="submit">Send</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/scripts/chat.js"></script>
+</body>
+</html> 
