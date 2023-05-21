@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" , sans-serif;
+}
+
+.mainBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-image: url("../images/about.png"); */
+    /* border: 2px solid black;
+    border-radius: 7px; */
+    /* margin: 100px; */
+    background-color: #3AAFA9;
+    /* border-width: 3.5px; */
+}
+.text{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+    border: solid black;
+    border-radius: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    background-color: #DEF2F1;
+    margin-top: 30px;
+}
+
+.text h1{
+    margin-top: 0%;
+}
+
+.socialIcons{
+    padding-top: 0%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+.socialIcons i{
+    text-align: center;
+    align-items: center;
+}
+
+.socialIcons a{
+    color: black;
+}
+
+#instagram:hover{
+    color: palevioletred;
+}
+#facebook:hover{
+    color: rgb(28, 28, 188);
+}
+#twitter:hover{
+    color: rgb(50, 191, 237);
+}
+
+.socialIcons a:hover{
+    color: #2B7A78;
+}
