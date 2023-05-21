@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins" , sans-serif;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #DEF2F1;
+    
+  }
+  
+  .right {
+    right: 0;
+    background-color: #3AAFA9;
+  }
+  .image-frame{
+    margin-top: -205px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 150px;
+    border-radius: 50%;
+  }
+  p{
+    font-size: 20px;
+  }
+  .left h2{
+    font-size: 22px;
+  }
+
+  
+
+  /* Define the size and position of the animation container */
+.animation-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* Define the styles for the face */
+.face {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Define the sad face */
+.sad {
+  background-color: yellow;
+}
+
+/* Define the happy face */
+.happy {
+  background-color: yellow;
+  overflow: hidden;
+}
+
+/* Define the eye style */
+.face:before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Define the position of the eyes for the sad face */
+.sad:before {
+  left: 25%;
+}
+
+/* Define the position of the eyes for the happy face */
+.happy:before {
+  left: 25%;
+  animation: blink 2s infinite;
+}
+
+/* Define the blink animation for the happy face */
+@keyframes blink {
+  0%, 50%, 100% {
+    height: 18px;
+  }
+  25%, 75% {
+    height: 0;
+  }
+}
+
+/* Define the mouth style for the sad face */
+.sad:after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 40px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Define the mouth style for the happy face */
+.happy:after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  animation: smile 2s infinite;
+}
+
+/* Define the smile animation for the happy face */
+@keyframes smile {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
