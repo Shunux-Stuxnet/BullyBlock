@@ -2,7 +2,7 @@
 
 BullyBlock is a web application dedicated to fostering a safe environment for children, helping them combat cyberbullying. Our platform allows victims to submit queries, which are processed and directed to cyber experts. BullyBlock generates automated reports for law enforcement and offers chat support for general queries.
 
-![BullyBlock Logo](https://github.com/Shunux-Stuxnet/BullyBlock/blob/main/Report/images/BullyCheck.png)
+<img src="https://github.com/Shunux-Stuxnet/BullyBlock/blob/main/Report/images/BullyCheck.png" width="300" alt="BullyBlock Logo">
 
 ## Table of Contents
 
