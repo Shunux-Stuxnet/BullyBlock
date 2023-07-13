@@ -1,4 +1,4 @@
-package main
+package report
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ import (
 	"github.com/technoreck/BB_report/server"
 )
 
-func main() {
+func report() {
 
 	Name := "User1"
 	Age := "23"
