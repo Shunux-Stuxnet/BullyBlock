@@ -4,7 +4,7 @@ BullyBlock is a web application dedicated to fostering a safe environment for ch
 </p>
 
 <p align="center">
-<img src="https://github.com/Shunux-Stuxnet/BullyBlock/blob/main/Report/images/BullyCheck.png" width="300" alt="BullyBlock Logo">
+<img src="https://github.com/Shunux-Stuxnet/BullyBlock/blob/main/Report/images/BullyBlock.png" width="300" alt="BullyBlock Logo">
 </p>
 
 ## Table of Contents
